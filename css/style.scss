@@ -25,5 +25,44 @@ body {
     background: linear-gradient(to right bottom, #c6d56fb6, #b49f28a8),
       url(/img/nature-person-rocks-standing-795660.jpg) center/cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    position: relative;
+
+    // Logo
+    .logo-container {
+      position: absolute;
+      top: 1rem;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .logo {
+        height: 2.5rem;
+      }
+    }
+
+    // Hero
+    .hero {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      .primary-heading {
+        color: $primary-white;
+        text-transform: uppercase;
+        line-height: 3.5rem;
+
+        .primary-heading-main {
+          display: block;
+          font-size: 5rem;
+          letter-spacing: 1.9rem;
+          font-weight: 300;
+        }
+        .primary-heading-sub {
+          display: block;
+          font-size: 1.1rem;
+          font-weight: 400;
+          letter-spacing: 1rem;
+        }
+      }
+    }
   }
 }
