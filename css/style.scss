@@ -33,6 +33,7 @@ body {
       top: 1rem;
       left: 50%;
       transform: translateX(-50%);
+      animation: moveInCenter 3s;
 
       .logo {
         height: 2.5rem;
@@ -55,14 +56,51 @@ body {
           font-size: 5rem;
           letter-spacing: 1.9rem;
           font-weight: 300;
+          animation: moveInLeft 1.5s;
         }
         .primary-heading-sub {
           display: block;
           font-size: 1.1rem;
           font-weight: 400;
           letter-spacing: 1rem;
+          animation: moveInRight 1.5s;
         }
       }
+    }
+  }
+
+  // Animations
+  @keyframes moveInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100rem);
+    }
+    75% {
+      transform: translateX(1.3rem);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes moveInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100rem);
+    }
+    75% {
+      transform: translateX(-1.3rem);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes moveInCenter {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
     }
   }
 }

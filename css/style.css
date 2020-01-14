@@ -29,6 +29,8 @@ body .header .logo-container {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  -webkit-animation: moveInCenter 3s;
+          animation: moveInCenter 3s;
 }
 
 body .header .logo-container .logo {
@@ -54,6 +56,8 @@ body .header .hero .primary-heading .primary-heading-main {
   font-size: 5rem;
   letter-spacing: 1.9rem;
   font-weight: 300;
+  -webkit-animation: moveInLeft 1.5s;
+          animation: moveInLeft 1.5s;
 }
 
 body .header .hero .primary-heading .primary-heading-sub {
@@ -61,5 +65,85 @@ body .header .hero .primary-heading .primary-heading-sub {
   font-size: 1.1rem;
   font-weight: 400;
   letter-spacing: 1rem;
+  -webkit-animation: moveInRight 1.5s;
+          animation: moveInRight 1.5s;
+}
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
+  }
+  75% {
+    -webkit-transform: translateX(1.3rem);
+            transform: translateX(1.3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100rem);
+            transform: translateX(-100rem);
+  }
+  75% {
+    -webkit-transform: translateX(1.3rem);
+            transform: translateX(1.3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100rem);
+            transform: translateX(100rem);
+  }
+  75% {
+    -webkit-transform: translateX(-1.3rem);
+            transform: translateX(-1.3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100rem);
+            transform: translateX(100rem);
+  }
+  75% {
+    -webkit-transform: translateX(-1.3rem);
+            transform: translateX(-1.3rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes moveInCenter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveInCenter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
