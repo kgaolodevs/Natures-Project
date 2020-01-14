@@ -1,0 +1,29 @@
+// Colors
+$light-yellow: #c6d56f;
+$medium-yellow: #c3c555;
+$dark-yellow: #b49f28;
+$dark-gray: #25242a;
+$medium-gray: #777;
+$primary-white: #fff;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: $dark-gray;
+  padding: 1.8rem;
+
+  .header {
+    height: 95vh;
+    background: linear-gradient(to right bottom, #c6d56fb6, #b49f28a8),
+      url(/img/nature-person-rocks-standing-795660.jpg) center/cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  }
+}

@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  color: #25242a;
+  padding: 1.8rem;
+}
+
+body .header {
+  height: 95vh;
+  background: -webkit-gradient(linear, left top, right bottom, from(#c6d56fb6), to(#b49f28a8)), url(/img/nature-person-rocks-standing-795660.jpg) center/cover;
+  background: linear-gradient(to right bottom, #c6d56fb6, #b49f28a8), url(/img/nature-person-rocks-standing-795660.jpg) center/cover;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+/*# sourceMappingURL=style.css.map */
