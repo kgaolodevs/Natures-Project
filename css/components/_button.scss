@@ -45,3 +45,28 @@
   animation: moveInBottom 1.5s ease-in-out 0.65s;
   animation-fill-mode: backwards;
 }
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $dark-yellow;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $dark-yellow;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background: $dark-yellow;
+    color: $primary-white;
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.15);
+    transform: translateY(0);
+  }
+}
