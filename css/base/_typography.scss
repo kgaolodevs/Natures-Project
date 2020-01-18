@@ -1,0 +1,56 @@
+body {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.2rem;
+  color: $dark-gray;
+  padding: 1.8rem;
+}
+
+// Hero
+.header__hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  .primary-heading {
+    color: $primary-white;
+    text-transform: uppercase;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+
+    .primary-heading--main {
+      display: block;
+      font-size: 6rem;
+      letter-spacing: 2rem;
+      font-weight: 300;
+      animation: moveInLeft 1.5s;
+    }
+    .primary-heading--sub {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 400;
+      letter-spacing: 1rem;
+      animation: moveInRight 1.5s;
+    }
+  }
+}
+
+.secondary-heading {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(to right, $light-yellow, $dark-yellow);
+  padding: 1rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    transform: skew(15deg, 2deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 0.1);
+  }
+}

@@ -1,0 +1,24 @@
+.header {
+  height: 95vh;
+  background: linear-gradient(to right bottom, #c6d56fb6, #b49f28a8),
+    url(/img/nature-person-rocks-standing-795660.jpg) center/cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+
+  // Logo
+  .header__logo-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    animation: moveInCenter 3s;
+
+    .header__logo {
+      height: 3.5rem;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      &:hover {
+        transform: translateY(-0.3rem);
+      }
+    }
+  }
+}
